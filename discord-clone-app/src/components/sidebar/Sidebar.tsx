@@ -5,7 +5,6 @@ import AddIcon from '@mui/icons-material/Add';
 import SidebarChannel from './SidebarChannel';
 import MicIcon from '@mui/icons-material/Mic';
 import HeadsetIcon from '@mui/icons-material/Headset';
-import HeadsetOffIcon from '@mui/icons-material/HeadsetOff';
 import SettingsIcon from '@mui/icons-material/Settings';
 
 
@@ -15,10 +14,10 @@ const Sidebar = () => {
       {/* sidebarLeft */}
       <div className='sidebarLeft'>
         <div className='serverIcon'>
-          <img src="./logo192.png" alt="" />
+          <img src="./discord-mark-white.png" alt="" />
         </div>
         <div className='serverIcon'>
-          <img src="./logo192.png" alt="" />
+          <img src="./discord-mark-white.png" alt="" />
         </div>
       </div>
 
