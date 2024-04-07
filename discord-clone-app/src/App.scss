@@ -1,5 +1,15 @@
 .App {
-  .body{
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  .Header {
+    color: #686a6e;
+    background-color: #111214;
+    padding-left: 7px;
+    height: 25px;
+  }
+  .body {
+    height: calc(100vh - 25px);
     display: flex;
   }
 }

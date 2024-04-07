@@ -32,18 +32,16 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
       }
-
-
     }
   }
 
   .sidebarRight {
     background-color: #2f3136;
     width: 300px;
-    position: relative;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 
     .sidebarTop {
       color: white;
@@ -51,51 +49,60 @@
       align-items: center;
       justify-content: space-between;
       padding: 20px;
+      border-bottom: 1px gray solid;
     }
 
     .sidebarChannels {
-      padding: 13px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
 
-      .sidebarChannelsHeader {
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 5px;
+      .sidebarEvent {
+        border-bottom: 1px gray solid;
 
-        .sidebarHeader {
+        .sidebarEventBody {
           display: flex;
-        }
+          align-items: center;
+          padding: 5px;
+          margin: 10px 5px;
+          color: white;
 
-        .sidebarAddIcon {
-          cursor: pointer;
+          &:hover {
+            background-color: #686a6e;
+            border-radius: 10px;
+          }
         }
       }
 
+      .sidebarChannelContents {
+        flex-grow: 1;
+        overflow-y: auto;
+        scrollbar-width: none;
+      }
     }
 
     .sidebarFooter {
-      position: absolute;
-      bottom: 0;
-
       width: 93%;
       padding-bottom: 10px;
-      border-top: 1px solid #686a6e;
       padding-top: 10px;
-      margin-left: -3px;
+      margin: 0 10px;
+      margin-top: auto;
       font-size: 1.1rem;
       color: white;
-
-      .accountStatus {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
+      border-top: 1px solid #686a6e;
 
       .sidebarAccount {
+
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .accountStatus {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
 
         .accountName {
 

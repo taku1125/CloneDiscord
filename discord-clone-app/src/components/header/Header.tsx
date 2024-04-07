@@ -3,9 +3,7 @@ import './Header.scss'
 
 const Header = () => {
   return (
-    <div className='Header'>
-      <h3>Discord</h3>
-    </div>
+    <></>
   )
 }
 

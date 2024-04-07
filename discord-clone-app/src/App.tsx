@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       {/* Header */}
-      <Header />
+      <div className='Header'>
+        <h3>Discord</h3>
+      </div>
       <div className="body">
         {/* Sidebar */}
         <Sidebar />
